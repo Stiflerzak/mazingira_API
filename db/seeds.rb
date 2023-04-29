@@ -121,8 +121,58 @@ natural_resources_defense_council= Organization.create!(
       location: "Ocean Beach, San Francisco",
       image: "https://www.nrdc.org/sites/default/files/styles/huge_4x3_100/public/2023-04/daf-donation-earth-day-1258008992-homepage-dropdown.jpg.webp?itok=rEkD4ChE"
     },
-  ]
-   
-    )
+  ] 
+       )
+
+       
+       Story.create!(
+        [
+          {
+            title: "Saving the Turtles",
+            blogurl: "https://tomorrowfood200274315.wordpress.com/2023/04/04/step-by-step-guide-deploying-an-api-only-ruby-on-rails-application-on-render/",
+            organization: "Earthjustice",
+            date: "2023-04-23rd",
+            location: "Costa Rica",
+            summary: "We helped protect turtle nesting grounds and hatchlings from predators and poachers, and raised awareness about the importance of sea turtle conservation.",
+            image: "https://images.ctfassets.net/81iqaqpfd8fy/1E7sBF870wYQRIaMn0s7sD/b8763104bbf99c182aad503e2870df97/environmentvol.jpg?h=620&w=1440"
+          },
+          {
+            title: "Protecting the Amazon",
+            blogurl: "https://tomorrowfood200274315.wordpress.com/2023/04/04/step-by-step-guide-deploying-an-api-only-ruby-on-rails-application-on-render/",
+            organization: "Fashion Revolution",
+            date: "2023-04-23rd",
+            location: "Brazil",
+            summary: "We worked with local communities to stop deforestation and preserve the biodiversity of the Amazon rainforest.",
+            image: "https://img.freepik.com/premium-photo/young-responsible-people-doing-community-charity-work-park-group-people-cleaning-together-public-park-saving-environment_1212-7546.jpg"
+          },
+          {
+            title: "Clean Water for All",
+            blogurl: "https://tomorrowfood200274315.wordpress.com/2023/04/04/step-by-step-guide-deploying-an-api-only-ruby-on-rails-application-on-render/",
+            organization: "Natural Resources Defense Council",
+            date: "2023-04-23rd",
+            location: "India",
+            summary: "We built wells and provided water filtration systems to give communities access to clean water and prevent water-borne illnesses.",
+            image: "https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/12/20/Pictures/asian-little-girl-helping-tree-father-plant_6cea6b48-e54e-11e7-bd8c-dad1885580ce.jpg"
+          },
+          {
+            title: "Renewable Energy in Action",
+            blogurl: "https://tomorrowfood200274315.wordpress.com/2023/04/04/step-by-step-guide-deploying-an-api-only-ruby-on-rails-application-on-render/",
+            organization: "Earthjustice",
+            date: "2023-04-23rd",
+            location: "USA",
+            summary: "We installed solar panels on community buildings and helped households transition to renewable energy, reducing their carbon footprint.",
+            image: "https://cdn1.matadornetwork.com/blogs/1/2020/07/volunteers-planting-trees-1200x853.jpg"
+          },
+          {
+            title: "Community Forests",
+            blogurl: "https://tomorrowfood200274315.wordpress.com/2023/04/04/step-by-step-guide-deploying-an-api-only-ruby-on-rails-application-on-render/",
+            organization: "School Girls Unite",
+            date: "2023-04-23rd",
+            location: "Kenya",
+            summary: "We worked with local communities to establish sustainable community forests, which provide important habitats for wildlife, protect watersheds, and mitigate climate change.",
+      image: "https://www.ecowatch.com/img/2019/03/29/Community-Forestry-India-2.jpeg"
+      }
+      ]
+      )
   puts "✅ Done seeding!"
   
