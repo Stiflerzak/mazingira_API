@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_29_171036) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_29_171915) do
   create_table "donations", force: :cascade do |t|
     t.string "amount"
     t.datetime "time"
@@ -18,6 +18,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_171036) do
     t.string "donor_name"
     t.string "donor_email"
     t.string "donor_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "time"
+    t.string "date"
+    t.string "poster"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

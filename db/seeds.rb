@@ -177,7 +177,7 @@ natural_resources_defense_council= Organization.create!(
       donations = Donation.create!(
         [
   {
-    id: 1,
+    
     amount: "$50",
     time: "2022-04-20T15:30:00Z",
     anonymous: false,
@@ -186,7 +186,7 @@ natural_resources_defense_council= Organization.create!(
     donor_image: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
   },
   {
-    id: 2,
+    
     amount: "$50",
     time: "2022-04-20T15:30:00Z",
     anonymous: false,
@@ -195,7 +195,7 @@ natural_resources_defense_council= Organization.create!(
     donor_image: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
   },
   {
-    id: 3,
+    
     amount: "$50",
     time: "2022-04-20T15:30:00Z",
     anonymous: false,
@@ -204,7 +204,7 @@ natural_resources_defense_council= Organization.create!(
     donor_image: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
   },
   {
-    id: 4,
+    
     amount: "$25",
     time: "2022-04-19T12:15:00Z",
     anonymous: true,
@@ -213,7 +213,7 @@ natural_resources_defense_council= Organization.create!(
     donor_image: "https://wallpapers.com/images/hd/cool-profile-picture-ld8f4n1qemczkrig.jpg"
   },
   {
-    id: 5,
+    
     amount: "$100",
     time: "2022-04-18T09:45:00Z",
     anonymous: false,
@@ -223,5 +223,46 @@ natural_resources_defense_council= Organization.create!(
   }
 ]
       )
+      #events
+      events = Event.create!(
+        [
+          [
+            {
+              title: "Annual Charity Walk",
+              description: "Join us for our annual charity walk to raise funds for the local shelter.",
+              time: "2023-05-10T08:00:00Z",
+              date: "May 10, 2023",
+              poster: "https://picsum.photos/id/1015/300/200",
+              location: "Central Park"
+            },
+            {
+              title: "Community Cleanup Day",
+              description: "Help keep our community clean by joining us for a day of litter picking and garbage collection.",
+              time: "2023-06-15T10:00:00Z",
+              date: "June 15, 2023",
+              poster: "https://picsum.photos/id/1025/300/200",
+              location: "Downtown Plaza"
+            },
+            {
+              title: "Blood Drive",
+              description: "Donate blood and help save lives at our annual blood drive event.",
+              time: "2023-07-20T14:00:00Z",
+              date: "July 20, 2023",
+              poster: "https://picsum.photos/id/1035/300/200",
+              location: "Community Center"
+            },
+            {
+              title: "Food Drive",
+              description: "Help feed the hungry in our community by donating non-perishable food items at our food drive.",
+              time: "2023-08-25T09:00:00Z",
+              date: "August 25, 2023",
+              poster: "https://picsum.photos/id/1045/300/200",
+              location: "Supermarket Parking Lot"
+            }
+          ]
+]
+      )
+
+      
   puts "✅ Done seeding!"
   
