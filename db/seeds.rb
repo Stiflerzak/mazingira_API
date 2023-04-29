@@ -293,13 +293,40 @@ natural_resources_defense_council= Organization.create!(
       )
 
 
-#       events = Event.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
+      messages= Message.create!(
+        [
+          {
+            text: 'Hello, how can I help you today?',
+            sender: 'support',
+            attachment: '',
+            createdAt: '2023-04-22T12:00:00.000Z'
+          },
+          {
+            text: 'I have a question about my account.',
+            sender: 'user',
+            attachment: '',
+            createdAt: '2023-04-22T12:01:00.000Z'
+          },
+          {
+            text: 'Sure, what would you like to know?',
+            sender: 'support',
+            attachment: '',
+            createdAt: '2023-04-22T12:02:00.000Z'
+          },
+          {
+            text: 'How can I change my password?',
+            sender: 'user',
+            attachment: '',
+            createdAt: '2023-04-22T12:03:00.000Z'
+          },
+          {
+            text: 'You can change your password by going to your account settings.',
+            sender: 'support',
+            attachment: '',
+            createdAt: '2023-04-22T12:04:00.000Z'
+          }      
+]
+      )
 
 #       events = Event.create!(
 #         [
