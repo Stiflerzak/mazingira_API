@@ -328,13 +328,41 @@ natural_resources_defense_council= Organization.create!(
 ]
       )
 
-#       events = Event.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
+      userengagement= UserEngagement.create!(
+        [
+          {
+    totalUsers: 1000,
+    activeUsers: 500,
+    inactiveUsers: 500,
+    month: "April",
+    visits: 5000,
+    signups: 100,
+    date: "2023-04-23",
+    donations: 5000
+  },
+  {
+    totalUsers: 1000,
+    activeUsers: 500,
+    inactiveUsers: 500,
+    month: "April",
+    visits: 5000,
+    signups: 100,
+    date: "2023-04-23",
+    donations: 5000
+  },
+  {
+    totalUsers: 1000,
+    activeUsers: 500,
+    inactiveUsers: 500,
+    month: "April",
+    visits: 5000,
+    signups: 100,
+    date: "2023-04-23",
+    donations: 5000
+  }
+
+]
+      )
 
 #       events = Event.create!(
 #         [
