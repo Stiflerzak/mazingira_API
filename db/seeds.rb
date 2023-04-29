@@ -465,86 +465,67 @@ natural_resources_defense_council= Organization.create!(
 ]
       )
 
-#       organization-data= OrganizationDatum.create!(
-#         [
-#           {
-#             name: "Red Cross"
-#           },
-#           {
-#             name: "UNICEF"
-#           },
-#           {
-#             name: "Doctors Without Borders"
-#           }
-# ]
-#       )
+      organizationdata= OrganizationDatum.create!(
+        [
+          {
+            name: "Red Cross"
+          },
+          {
+            name: "UNICEF"
+          },
+          {
+            name: "Doctors Without Borders"
+          }
+]
+      )
 
-#       users= User.create!(
-#         [
-#           {
-#       name: "Jane Doe",
-#       email: "jane.doe@example.com",
-#       registrationType: "organization",
-#       profilepic: "https://via.placeholder.com/50"
-#     },
-#     {
-#       name: "Bob Johnson",
-#       email: "bob.johnson@example.com",
-#       registrationType: "donor",
-#       profilepic: "https://via.placeholder.com/50"
-#     },
-#     {
-#       name: "UN",
-#       email: "un@gmail.com",
-#       registrationType: "organization",
-#       profilepic: "https://via.placeholder.com/50"
-#     },
-#     {
-#       name: "Bruno Kiptoo",
-#       email: "biwandagu@gmail.com",
-#       registrationType: "organization",
-#       profilepic: "https://via.placeholder.com/50"
-#     },
-#     {
-#       email: "exampleuser1@gmail.com",
-#       password: "123456",
-#       confirmPassword: "123456",
-#       registrationType: "organization"
-#     },
-#     {
-#       email: "exampleuser1@gmail.com",
-#       password: "123456",
-#       confirmPassword: "123456",
-#       registrationType: "organization"
-#     },
-#     {
-#       email: "exampleuser1@gmail.com",
-#       password: "123456",
-#       confirmPassword: "123456",
-#       registrationType: "organization"
-#     },
-#     {
-#       email: "exampleuser1@gmail.com",
-#       password: "password1",
-#       registrationType: "donor"
-#     },
-#     {
-#       email: "gangsta1@gmail.com",
-#       password: "password1",
-#       registrationType: "donor"
-#     },
-#     {
-#       email: "hillary1@gmail.com",
-#       password: "password1",
-#       registrationType: "donor"
-#     },
-#     {
-#       email: "brunochelimo@gmail.com",
-#       password: "123456",
-#       registrationType: "donor"
-#     }
-# ]
-      # )
+      users= User.create!(
+        [
+        
+    {
+      email: "exampleuser1@gmail.com",
+      password: "123456",
+      confirm_password: "123456",
+      registration_type: "organization"
+    },
+    {
+      email: "exampleuser1@gmail.com",
+      password: "123456",
+      confirm_password: "123456",
+      registration_type: "organization"
+    },
+    {
+      email: "exampleuser1@gmail.com",
+      password: "123456",
+      confirm_password: "123456",
+      registration_type: "organization"
+    },
+    {
+      email: "exampleuser1@gmail.com",
+      password: "password1",
+      confirm_password: "123456",
+      registration_type: "donor"
+    },
+    {
+      email: "gangsta1@gmail.com",
+      password: "password1",
+      confirm_password: "123456",
+      registration_type: "donor"
+    },
+    {
+      email: "hillary1@gmail.com",
+      password: "password1",
+      confirm_password: "123456",
+      registration_type: "donor"
+    },
+    {
+      email: "brunochelimo@gmail.com",
+      password: "123456",
+      confirm_password: "123456",
+      registration_type: "donor"
+    }
+]
+      )
 #       page= Page.create!(
 #         [
 #           [
