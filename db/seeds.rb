@@ -526,43 +526,62 @@ natural_resources_defense_council= Organization.create!(
     }
 ]
       )
-#       page= Page.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
-#       page= Page.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
-#       page= Page.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
+      application= Application.create!(
+        [
+          {
+      name: "Green Earth",
+      email: "brunochelimo@gmail.com",
+      password: "123456",
+      website: "https://www.greenearth.org"
+    },
+    {
+      name: "EcoVision",
+      email: "info@ecovision.org",
+      password: "123456",
+      website: "https://www.ecovision.org"
+    },
+    {
+      name: "Nature's Call",
+      email: "info@naturescall.org",
+      password: "123456",
+      website: "https://www.naturescall.org",
+    
+    },
+    {
+      name: "Earth Savers",
+      email: "info@earthsavers.org",
+      password: "123456",
+      website: "https://www.earthsavers.org"
+    },
+    {
+      name: "John Doe",
+      password: "123456",
+      website: "example.com",
+      email: "johndoe@example.com"
+    },
+    {
+      name: "martin odegaard",
+      email: "exampleuser1@gmail.com",
+      password: "123456",
+      website: "info@naturescall.org"
+    },
+    {
+      name: "Liverpool",
+      email: "gangsta1@gmail.com",
+    
+      website: "liverpoolbottlers.com",
+      
+    },
+    {
+      name: "Liverpool",
+      email: "kiplame@gmail.com",
+      password: "123456",
+      website: "liverpoolbottlers.com",
+    
+    }
+]
+      )
 
-#       page= Page.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
-
-#       page= Page.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
       
   puts "✅ Done seeding!"
   
