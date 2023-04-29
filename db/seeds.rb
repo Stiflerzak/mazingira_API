@@ -413,7 +413,20 @@ natural_resources_defense_council= Organization.create!(
 ]
       )
 
-#       events = Event.create!(
+      page= Page.create!(
+        [
+          {
+            "title": "Home",
+            "content": "<p>Welcome to our website!</p>"
+          },
+          {
+            "title": "About Us",
+            "content": "<p>We are a company that sells products online.</p>"
+          }
+]
+      )
+
+#       page= Page.create!(
 #         [
 #           [
             
@@ -421,6 +434,66 @@ natural_resources_defense_council= Organization.create!(
 # ]
 #       )
 
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
+#       page= Page.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
       
   puts "✅ Done seeding!"
   
