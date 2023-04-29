@@ -174,5 +174,54 @@ natural_resources_defense_council= Organization.create!(
       }
       ]
       )
+      donations = Donation.create!(
+        [
+  {
+    id: 1,
+    amount: "$50",
+    time: "2022-04-20T15:30:00Z",
+    anonymous: false,
+    donor_name: "John Doe",
+    donor_email: "johndoe@example.com",
+    donor_image: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
+  },
+  {
+    id: 2,
+    amount: "$50",
+    time: "2022-04-20T15:30:00Z",
+    anonymous: false,
+    donor_name: "John Doe",
+    donor_email: "johndoe@example.com",
+    donor_image: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
+  },
+  {
+    id: 3,
+    amount: "$50",
+    time: "2022-04-20T15:30:00Z",
+    anonymous: false,
+    donor_name: "John Doe",
+    donor_email: "johndoe@example.com",
+    donor_image: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
+  },
+  {
+    id: 4,
+    amount: "$25",
+    time: "2022-04-19T12:15:00Z",
+    anonymous: true,
+    donor_name: "",
+    donor_email: "",
+    donor_image: "https://wallpapers.com/images/hd/cool-profile-picture-ld8f4n1qemczkrig.jpg"
+  },
+  {
+    id: 5,
+    amount: "$100",
+    time: "2022-04-18T09:45:00Z",
+    anonymous: false,
+    donor_name: "Jane Smith",
+    donor_email: "janesmith@example.com",
+    donor_image: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?cs=srgb&dl=pexels-mohamed-abdelghaffar-771742.jpg&fm=jpg"
+  }
+]
+      )
   puts "✅ Done seeding!"
   

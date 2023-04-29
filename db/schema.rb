@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_29_163707) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_29_171036) do
+  create_table "donations", force: :cascade do |t|
+    t.string "amount"
+    t.datetime "time"
+    t.boolean "anonymous"
+    t.string "donor_name"
+    t.string "donor_email"
+    t.string "donor_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "organizations", force: :cascade do |t|
     t.string "logo"
     t.string "image"
