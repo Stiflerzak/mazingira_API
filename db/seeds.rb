@@ -263,6 +263,68 @@ natural_resources_defense_council= Organization.create!(
 ]
       )
 
+      notifications = Notification.create!(
+        [
+  {
+    title: "Important update",
+    message: "Please be aware of an important update that may affect your account. Check your email for more details. 📩",
+    date: "2023-04-22T15:20:00.000Z",
+    sender: "Mazingira🍃",
+    receiver: "UNEP",
+    profilepic: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
+  },
+  {
+    title: "Payment received",
+    message: "You have received a payment of $50 from Jane Smith.",
+    date: "2023-04-20T12:15:00.000Z",
+    sender: "Mazingira🌿",
+    receiver: "UNEP",
+    profilepic: "https://via.placeholder.com/50"
+  },
+  {
+    title: "Celebrate Earth Day",
+    message: "Join us as we celebrate earth day! 🌍",
+    date: "2023-04-21T09:45:00.000Z",
+    sender: "Mazingira🌿",
+    receiver: "UNEP",
+    profilepic: "https://wallpapers.com/images/featured/87h46gcobjl5e4xu.jpg"
+  }
+]
+      )
+
+
+#       events = Event.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
+#       events = Event.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
+#       events = Event.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
+#       events = Event.create!(
+#         [
+#           [
+            
+#           ]
+# ]
+#       )
+
       
   puts "✅ Done seeding!"
   

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_29_171915) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_29_173119) do
   create_table "donations", force: :cascade do |t|
     t.string "amount"
     t.datetime "time"
@@ -29,6 +29,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_171915) do
     t.string "date"
     t.string "poster"
     t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "notifications", force: :cascade do |t|
+    t.string "title"
+    t.text "message"
+    t.datetime "date"
+    t.string "sender"
+    t.string "receiver"
+    t.string "profilepic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
