@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_29_181629) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_29_184712) do
   create_table "donation_activities", force: :cascade do |t|
     t.integer "totalDonations"
     t.integer "monthlyDonations"
@@ -21,6 +21,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_181629) do
     t.integer "activeUsers"
     t.date "date"
     t.integer "donations"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "donation_data", force: :cascade do |t|
+    t.string "donor_name"
+    t.date "date"
+    t.float "amount"
+    t.string "payment_method"
+    t.integer "organization_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -67,6 +77,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_181629) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "organization_data", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "organizations", force: :cascade do |t|
     t.string "logo"
     t.string "image"
@@ -88,6 +104,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_181629) do
   create_table "pages", force: :cascade do |t|
     t.string "title"
     t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.string "donor_name"
+    t.date "date"
+    t.float "amount"
+    t.string "payment_method"
+    t.integer "organization_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -131,6 +157,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_181629) do
     t.integer "signups"
     t.date "date"
     t.integer "donations"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "registration_type"
+    t.string "profilepic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

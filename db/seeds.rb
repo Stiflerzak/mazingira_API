@@ -416,12 +416,12 @@ natural_resources_defense_council= Organization.create!(
       page= Page.create!(
         [
           {
-            "title": "Home",
-            "content": "<p>Welcome to our website!</p>"
+            title: "Home",
+            content: "<p>Welcome to our website!</p>"
           },
           {
-            "title": "About Us",
-            "content": "<p>We are a company that sells products online.</p>"
+            title: "About Us",
+            content: "<p>We are a company that sells products online.</p>"
           }
 ]
       )
@@ -429,39 +429,122 @@ natural_resources_defense_council= Organization.create!(
       post= Post.create!(
         [
           {
-            "title": "New Product Launch",
-            "content": "<p>We are excited to announce the launch of our new product!</p>"
+            title: "New Product Launch",
+            content: "<p>We are excited to announce the launch of our new product!</p>"
           },
           {
-            "title": "Holiday Sale",
-            "content": "<p>Get your holiday shopping done early with our special sale!</p>"
+            title: "Holiday Sale",
+            content: "<p>Get your holiday shopping done early with our special sale!</p>"
           }
 ]
       )
 
-#       page= Page.create!(
+      payment= Payment.create!(
+        [
+          {
+            donor_name: "John Doe",
+            date: "2022-03-20",
+            amount: 50,
+            payment_method: "Credit Card",
+            organization_id: 1
+          },
+          {
+            donor_name: "Jane Smith",
+            date: "2022-03-22",
+            amount: 100,
+            payment_method: "PayPal",
+            organization_id: 2
+          },
+          {
+            donor_name: "Bob Johnson",
+            date: "2022-03-25",
+            amount: 25,
+            payment_method: "Venmo",
+            organization_id: 1
+          }
+]
+      )
+
+#       organization-data= OrganizationDatum.create!(
 #         [
-#           [
-            
-#           ]
+#           {
+#             name: "Red Cross"
+#           },
+#           {
+#             name: "UNICEF"
+#           },
+#           {
+#             name: "Doctors Without Borders"
+#           }
 # ]
 #       )
 
-#       page= Page.create!(
+#       users= User.create!(
 #         [
-#           [
-            
-#           ]
+#           {
+#       name: "Jane Doe",
+#       email: "jane.doe@example.com",
+#       registrationType: "organization",
+#       profilepic: "https://via.placeholder.com/50"
+#     },
+#     {
+#       name: "Bob Johnson",
+#       email: "bob.johnson@example.com",
+#       registrationType: "donor",
+#       profilepic: "https://via.placeholder.com/50"
+#     },
+#     {
+#       name: "UN",
+#       email: "un@gmail.com",
+#       registrationType: "organization",
+#       profilepic: "https://via.placeholder.com/50"
+#     },
+#     {
+#       name: "Bruno Kiptoo",
+#       email: "biwandagu@gmail.com",
+#       registrationType: "organization",
+#       profilepic: "https://via.placeholder.com/50"
+#     },
+#     {
+#       email: "exampleuser1@gmail.com",
+#       password: "123456",
+#       confirmPassword: "123456",
+#       registrationType: "organization"
+#     },
+#     {
+#       email: "exampleuser1@gmail.com",
+#       password: "123456",
+#       confirmPassword: "123456",
+#       registrationType: "organization"
+#     },
+#     {
+#       email: "exampleuser1@gmail.com",
+#       password: "123456",
+#       confirmPassword: "123456",
+#       registrationType: "organization"
+#     },
+#     {
+#       email: "exampleuser1@gmail.com",
+#       password: "password1",
+#       registrationType: "donor"
+#     },
+#     {
+#       email: "gangsta1@gmail.com",
+#       password: "password1",
+#       registrationType: "donor"
+#     },
+#     {
+#       email: "hillary1@gmail.com",
+#       password: "password1",
+#       registrationType: "donor"
+#     },
+#     {
+#       email: "brunochelimo@gmail.com",
+#       password: "123456",
+#       registrationType: "donor"
+#     }
 # ]
-#       )
-
-#       page= Page.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
+      # )
 #       page= Page.create!(
 #         [
 #           [

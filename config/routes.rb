@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :payments
+  resources :users
+  resources :organization_data
+  resources :donation_data
   resources :posts
   resources :pages
   resources :donation_activities
