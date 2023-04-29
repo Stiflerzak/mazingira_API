@@ -364,13 +364,54 @@ natural_resources_defense_council= Organization.create!(
 ]
       )
 
-#       events = Event.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
+      donation_activities= DonationActivity.create!(
+        [
+          {
+      totalDonations: 10000,
+      monthlyDonations: 2000,
+      averageDonation: 50,
+      month: "April",
+      visits: 5000,
+      signups: 100,
+      activeUsers: 500,
+      date: "2023-04-23",
+      donations: 5000
+    },
+    {
+      totalDonations: 10000,
+      monthlyDonations: 2000,
+      averageDonation: 50,
+      month: "April",
+      visits: 5000,
+      signups: 100,
+      activeUsers: 500,
+      date: "2023-04-23",
+      donations: 5000
+    },
+    {
+      totalDonations: 10000,
+      monthlyDonations: 2000,
+      averageDonation: 50,
+      month: "April",
+      visits: 5000,
+      signups: 100,
+      activeUsers: 500,
+      date: "2023-04-23",
+      donations: 5000
+    },
+    {
+      totalDonations: 10000,
+      monthlyDonations: 2000,
+      averageDonation: 50,
+      month: "April",
+      visits: 5000,
+      signups: 100,
+      activeUsers: 500,
+      date: "2023-04-23",
+      donations: 5000
+    }
+]
+      )
 
 #       events = Event.create!(
 #         [

@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_29_175455) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_29_180037) do
+  create_table "donation_activities", force: :cascade do |t|
+    t.integer "totalDonations"
+    t.integer "monthlyDonations"
+    t.float "averageDonation"
+    t.string "month"
+    t.integer "visits"
+    t.integer "signups"
+    t.integer "activeUsers"
+    t.date "date"
+    t.integer "donations"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "donations", force: :cascade do |t|
     t.string "amount"
     t.datetime "time"
