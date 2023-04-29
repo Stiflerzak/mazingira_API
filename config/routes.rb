@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   resources :pages
   resources :donation_activities
   resources :user_engagements

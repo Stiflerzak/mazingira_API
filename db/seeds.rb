@@ -426,13 +426,18 @@ natural_resources_defense_council= Organization.create!(
 ]
       )
 
-#       page= Page.create!(
-#         [
-#           [
-            
-#           ]
-# ]
-#       )
+      post= Post.create!(
+        [
+          {
+            "title": "New Product Launch",
+            "content": "<p>We are excited to announce the launch of our new product!</p>"
+          },
+          {
+            "title": "Holiday Sale",
+            "content": "<p>Get your holiday shopping done early with our special sale!</p>"
+          }
+]
+      )
 
 #       page= Page.create!(
 #         [
