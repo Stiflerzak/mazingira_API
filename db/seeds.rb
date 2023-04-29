@@ -71,5 +71,58 @@ natural_resources_defense_council= Organization.create!(
       contactPerson: "Alice Brown",
       profilepic: "https://via.placeholder.com/50"
     )
+    Reminder.create!(
+  [
+    {
+      title: "Beach Cleanup",
+      organization: "Earthjustice",
+      description: "Join us for a beach clean-up on Saturday at 9am",
+      date: "2023-04-23",
+      location: "Ocean Beach, San Francisco",
+      image: "https://www.nrdc.org/sites/default/files/styles/huge_4x3_100/public/2023-04/daf-donation-earth-day-1258008992-homepage-dropdown.jpg.webp?itok=rEkD4ChE"
+    },
+    {
+      title: "Sustainable Living Forum",
+      organization: "Earthjustice",
+      image: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGVudmlyb25tZW50YWx8ZW58MHx8MHx8&w=1000&q=80",
+      description: "Don't miss our panel discussion on sustainable living on Wednesday at 6pm",
+      date: "2023-04-27",
+      location: "123 Main St, San Francisco"
+    },
+    {
+      title: "Community Garden Day",
+      organization: "Fashion Revolution",
+      image: "https://st.depositphotos.com/1447173/3140/i/600/depositphotos_31406835-stock-photo-the-aim-is-the-recycling.jpg",
+      description: "Come help us plant the new community garden on Sunday at 10am",
+      date: "2023-05-01",
+      location: "Golden Gate Park, San Francisco"
+    },
+    {
+      title: "Climate Change March",
+      organization: "Fashion Revolution",
+      image: "https://media.istockphoto.com/id/1327919661/photo/world-earth-day-concept-green-energy-renewable-and-sustainable-resources-environmental-and.jpg?b=1&s=170667a&w=0&k=20&c=7u6TwP6RmGm5e9x78rZ_VS0QZ7JxUQmGaywqfPYdaWs=",
+      description: "Join us for a climate change march on Saturday at 2pm",
+      date: "2023-05-07",
+      location: "Civic Center Plaza, San Francisco"
+    },
+    {
+      title: "Beach Cleanup",
+      organization: "Fashion Revolution",
+      description: "Join us for a beach clean-up on Saturday at 9am",
+      date: "2023-04-23",
+      location: "Ocean Beach, San Francisco",
+      image: "https://www.nrdc.org/sites/default/files/styles/huge_4x3_100/public/2023-04/daf-donation-earth-day-1258008992-homepage-dropdown.jpg.webp?itok=rEkD4ChE"
+    },
+    {
+      title: "Beach Cleanup",
+      organization: "Natural Resources Defense Council",
+      description: "Join us for a beach clean-up on Saturday at 9am",
+      date: "2023-04-23",
+      location: "Ocean Beach, San Francisco",
+      image: "https://www.nrdc.org/sites/default/files/styles/huge_4x3_100/public/2023-04/daf-donation-earth-day-1258008992-homepage-dropdown.jpg.webp?itok=rEkD4ChE"
+    },
+  ]
+   
+    )
   puts "✅ Done seeding!"
   
